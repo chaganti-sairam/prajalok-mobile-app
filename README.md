@@ -4,9 +4,8 @@ A new Flutter project.
 
 ## Getting Started
 permiso hande resources link 
-## https://github.com/khoobcoding/Permission-Handler-in-Flutter/blob/main/permissionhandler.dart
 This project is a starting point for a Flutter application.
-
+finall
 A few resources to get you started if this is your first Flutter project:
 
 - [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
