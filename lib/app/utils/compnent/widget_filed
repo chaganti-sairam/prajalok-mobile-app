@@ -1,0 +1,34 @@
+class CustomTextFormField extends StatefulWidget {
+  final String label;
+  final String? hintText;
+  final TextInputType? keyboardType;
+//  final String? Function(String?)? validator;
+  final TextEditingController? controller;
+
+  const CustomTextFormField({
+    Key? key,
+    required this.label,
+    this.hintText,
+    this.keyboardType,
+    this.validator,
+    this.controller,
+  }) : super(key: key);
+
+  @override
+  _CustomTextFormFieldState createState() => _CustomTextFormFieldState();
+}
+
+class _CustomTextFormFieldState extends State<CustomTextFormField> {
+  @override
+  Widget build(BuildContext context) {
+    return TextFormField(
+      controller: widget.controller ?? TextEditingController(),
+      decoration: InputDecoration(
+        labelText: widget.label,
+        hintText: widget.hintText,
+      ),
+    //  keyboardType: widget.keyboardType,
+     // validator: widget.validator,
+    );
+  }
+}
